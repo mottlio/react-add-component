@@ -36,4 +36,5 @@ We have an existing div with id "app" and that is where we place a newly created
 ## Including JSX (with Babel transpiler) in a React project
 
 - React DOM Factories no longer necessary
-- Babel has to be included via a script
+- Babel is included via a script
+- Babel is slow - it's important to use tools to make sure that JSX -> JS conversion is done ahead of time - precompiling scripts for production
