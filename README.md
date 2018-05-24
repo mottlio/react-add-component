@@ -38,3 +38,12 @@ We have an existing div with id "app" and that is where we place a newly created
 - React DOM Factories no longer necessary
 - Babel is included via a script
 - Babel is slow - it's important to use tools to make sure that JSX -> JS conversion is done ahead of time - precompiling scripts for production
+
+## CSS styling in JSX
+
+Because Babel doesn't know the difference between HTML attribute "class" and JS "class" we need to use "className" with Babel.
+
+## In-line styles
+
+A big No-No in HTML is GREAT in REACT.
+I made a const liStyle in JavaScript and then added it as style in the html tags. 

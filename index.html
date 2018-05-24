@@ -13,11 +13,17 @@
   <script type="text/babel"> //need to warn that we'll be using Babel
   class Pet extends React.Component {
     render () {
+        const liStyle = {fontSize: '1.5em'};
         return (
-            <div>
-                <h2>Moxie</h2>
+            <div className="card">
+                <h2 className="name">Moxie</h2>
                 <img src="https://github.com/tigarcia/Moxie/raw/master/moxie.png"
-                     alt="Moxie my cat"/> //Must close all tags
+                     alt="Moxie my cat"/> 
+                <h5>Hobbies:</h5>
+                <ul>
+                    <li style={liStyle}>Sleep</li>
+                    <li style={liStyle}>Eat</li>
+                </ul>
             </div> 
         );
         // const h2 = ReactDOMFactories.h2(null, "Moxie"); //factories creates the DOM elements -> (optional attributes, content)
