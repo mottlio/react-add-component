@@ -32,3 +32,8 @@ We use ReactDOM.render() to render components in the DOM.
 ReactDOM.render(React.createElement(Pet), document.getElementById("app"))
 ```
 We have an existing div with id "app" and that is where we place a newly created element "pet".
+
+## Including JSX (with Babel transpiler) in a React project
+
+- React DOM Factories no longer necessary
+- Babel has to be included via a script
