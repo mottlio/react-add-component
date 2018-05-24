@@ -47,3 +47,7 @@ Because Babel doesn't know the difference between HTML attribute "class" and JS 
 
 A big No-No in HTML is GREAT in REACT.
 I made a const liStyle in JavaScript and then added it as style in the html tags. 
+
+## Curly braces
+
+Used to evaluate JS. 
