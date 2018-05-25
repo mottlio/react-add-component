@@ -51,3 +51,15 @@ I made a const liStyle in JavaScript and then added it as style in the html tags
 ## Curly braces
 
 Used to evaluate JS. 
+
+## Can include multiple elements based on an array
+
+like so:
+
+```
+<ul>
+    {hobbies.map(h => {
+        return <li style={style}>{h}</li>
+    })}
+</ul>
+```

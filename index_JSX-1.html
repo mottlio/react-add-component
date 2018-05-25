@@ -10,24 +10,30 @@
 </head>
 <body>
   <div id="app"></div>
-  <script type="text/babel"> 
+  <script type="text/babel"> //need to warn that we'll be using Babel
   class Pet extends React.Component {
     render () {
-        const style = {fontSize: '1.5em'};
-        const hobbies = ["sleeping", "eating", "cuddling"]
+        const liStyle = {fontSize: '1.5em'};
         return (
             <div className="card">
                 <h2 className="name">Moxie</h2>
                 <img src="https://github.com/tigarcia/Moxie/raw/master/moxie.png"
-                    alt="Moxie my cat"/> 
+                     alt="Moxie my cat"/> 
                 <h5 style={{fontSize: '2em', margin: '2px', }}>Hobbies:</h5>
+                {5 + 5}
+                {"green " + "blue"}
                 <ul>
-                    {hobbies.map(h => {
-                        return <li style={style}>{h}</li>
-                    })}
+                    <li style={liStyle}>Sleep</li>
+                    <li style={liStyle}>Eat</li>
                 </ul>
             </div> 
         );
+        // const h2 = ReactDOMFactories.h2(null, "Moxie"); //factories creates the DOM elements -> (optional attributes, content)
+        // const img = ReactDOMFactories.img({
+        //   src: "https://github.com/tigarcia/Moxie/raw/master/moxie.png",
+        //   alt: "Moxie my cat"
+        // });
+        // return ReactDOMFactories.div(null, h2, img);
     }
 }
 
