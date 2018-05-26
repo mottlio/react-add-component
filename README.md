@@ -58,8 +58,9 @@ like so:
 
 ```
 <ul>
-    {hobbies.map(h => {
-        return <li style={style}>{h}</li>
+    {hobbies.map((h, i) => {
+        return <li key={i} style={style}>{h}</li>
     })}
 </ul>
 ```
+i is added as a unique key because that is what React needs to display arrays
