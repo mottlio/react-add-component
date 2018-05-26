@@ -64,3 +64,25 @@ like so:
 </ul>
 ```
 i is added as a unique key because that is what React needs to display arrays
+
+## One component can include another:
+
+Like so:
+
+```
+class Pet extends React.Component {
+    render () {
+        const style = {fontSize: '1.5em'};
+        
+        return (
+            <div className="card">
+                <h2 className="name">Moxie</h2>
+                <img src="https://github.com/tigarcia/Moxie/raw/master/moxie.png"
+                    alt="Moxie my cat"/> 
+                <h5 style={{fontSize: '2em', margin: '2px', }}>Hobbies:</h5>
+                <HobbyList />               <------
+            </div> 
+        );
+    }
+}
+```
